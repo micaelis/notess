@@ -1,11 +1,11 @@
 /* Tumblr AJAX Notes Plugin by Matthew Buchanan v3.0.1
    Requires jQuery 1.2.6 or higher
-   See http://matthewbuchanan.name/tumblr/ajax-notes/ for installation guide 
+   See http://matthewbuchanan.name/tumblr/ajax-notes/ for installation guide */
 
 $(document).ready(function(){
    homeNotes();
-});   */
-$(function homeNotes() {
+});  
+function homeNotes() {
 	$("a.notes-button").each(function() {
 		var noteCount = $(this).html();
 		if (noteCount.indexOf(" ") != -1) {
@@ -30,4 +30,4 @@ $(function homeNotes() {
 			});
 		} });
 	});
-});
+};
