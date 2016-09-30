@@ -16,7 +16,7 @@ $(function homeNotes() {
 		if (noteCount > 0) $(this).show();
 		if (noteCount > 14) $(this).addClass("fave");
 	});
-	$("a.notes-button").click(function(event) {
+	$("a.notes-button").unbind('click').click(function(event) {
 		event.preventDefault();
 		var node = $("#notes-"+$(this).attr("rel"));
 		$("#notes-"+$(this).attr("rel")).slideToggle();
